@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'BBH Sans Bogle', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:#FFF2D7;
+    }
+
+    main {
+      width: 90%;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      column-gap: 5px;
+    }
+
+    .child {
+      width: 50%;
+      height: 200px;
+      background-color: #FCF9EA;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 15px;
+    }
+
+    h3 {
+      padding: 13px;
+    }
+
+    p {
+      padding: 21px;
+      text-align: justify;
+    }
+
+    .chlid_right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+
+    .row {
+      width: 100%;
+      background-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        row-gap: 5px;
+      }
+
+      .child {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="child">
+        <h3>A r i a</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis
+          illum quas rerum odio minus repudiandae at incidunt veritatis.
+        </p>
+      </div>
+      <div class="child chlid_right">
+        <div class="row row_1">
+          <h3>A r t i n</h3>
+        </div>
+        <div class="row row_2" style="height: 250px;">
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim.</p>
+        </div>
+        <div class="row row_3">
+          <h4 style="text-align: center; line-height: 55px;">About us</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
